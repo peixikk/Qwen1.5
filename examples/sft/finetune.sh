@@ -27,7 +27,7 @@ MODEL="Qwen/Qwen1.5-7B" # Set the path if you do not want to load from huggingfa
 # ATTENTION: specify the path to your training data, which should be a json file consisting of a list of conversations.
 # See the section for finetuning in README for more information.
 DATA="path_to_data"
-DS_CONFIG_PATH="finetune/ds_config_zero3.json"
+DS_CONFIG_PATH="ds_config_zero3.json"
 USE_LORA=False
 Q_LORA=False
 
