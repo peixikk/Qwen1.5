@@ -215,6 +215,7 @@ class LazySupervisedDataset(Dataset):
         if i in self.cached_data_dict:
             return self.cached_data_dict[i]
 
+        print(i+"撒打算")
         ret = preprocess([self.raw_data[i]["messages"]], self.tokenizer, self.max_len)
         ret = dict(
             input_ids=ret["input_ids"][0],
